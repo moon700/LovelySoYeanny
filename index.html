@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Beanvely</title> 
+
+    <link rel="shortcut icon" href="https://images.velog.io/images/pranne1224/profile/d5ec7ba1-2d95-42cd-b3de-5fed763da8b8/%E1%84%8C%E1%85%AD%E1%84%85%E1%85%B3%E1%84%83%E1%85%B5.png">
+
+    <meta property="og:image" content="https://media.tenor.com/kRLOnWLwn6oAAAAM/birthday-card-birthday.gif">
+    <meta property="og:title" content = "TO Beanvely">
+    <meta property="og:description" content="">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Poor Story', cursive;
+        }
+
+
+        body {
+            background-color: aquamarine
+        }
+
+        .envelope {
+
+            width: 200px;
+            height: 200px;
+
+            background-image: url('https://media.tenor.com/5Va0qr1dbFMAAAAi/happy-birthday-greeting.gif');
+            background-size: cover;
+            background-position: center;
+
+            margin: 150px auto 0px auto;
+
+            cursor: pointer;
+        }
+
+        .envelope-msg {
+            color: salmon;
+            text-align: center;
+
+            margin: -4px auto 0px auto;
+        }
+
+        .letter-close {
+            display: block;
+        }
+
+        .letter-open {
+            display: none;
+        }
+
+        .rtan {
+            background-color: white;
+
+            width: 200px;
+            height: 200px;
+
+            background-image: url('https://user-images.githubusercontent.com/84804861/119546660-1f8ac480-bdcf-11eb-9ef5-875b7ec175eb.gif');
+            background-repeat: no-repeat;
+
+            background-size: cover;
+            background-position: center;
+
+            margin: 100px auto 0px auto;
+
+            border-radius: 100px;
+
+            border: 5px solid white;
+            box-shadow: 0px 0px 10px 2px white;
+        }
+
+        h1 {
+            color: salmon;
+            text-align: center;
+
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .messagebox {
+            background-color: ivory;
+
+            width: 330px;
+            margin: auto;
+
+            color: brown;
+
+            padding: 30px;
+
+            font-size: 20px;
+            line-height: 30px;
+
+            box-shadow: 0px 0px 10px 2px white;
+        }
+
+        @media screen and (max-width: 760px) {
+            .messagebox {
+                width: 300px;
+                padding: 20px;
+            }
+        }
+
+        .rtan {
+
+            width: 160px;
+            height: 160px;
+            margin: 100px auto 0px auto;
+
+        }
+
+        h1 {
+
+            font-size: 24px;
+        }
+
+        .envelope {
+
+            margin: 160px auto 0px auto;
+        }
+    </style>
+
+    <script>
+
+        function open_letter(){
+            document.getElementsByClassName("letter-close")[0].style.display = 'none'
+            document.getElementsByClassName("letter-open")[0].style.display = 'block'
+        }
+    </script>
+
+
+
+</head>
+
+<body>
+    <div class="letter-close">
+        <div class="envelope" onclick="open_letter()"></div>
+        <h2 class="envelope-msg" onclick="open_letter()">Click!</h2>
+    </div>
+    <div class="letter-open">
+        <div class="rtan"></div>
+        <h1>생일 축하합니다:)</h1>
+        <div class="messagebox">
+            오늘만큼은 가장 행복하고  <br />
+            즐거운 하루를 보냈으면 좋겠네요.  <br />
+            요즘 마음이 많이 힘드셨죠? <br />
+            힘들어도 열심히 해야 할 일들을   <br />
+            잘 해내는 모습이 참 멋집니다. <br />
+            항상 밝고 환하게 웃는 <br />
+            모습이 참 이쁩니다. <br />
+            그런 그대가 참 좋습니다. <br />
+            앞으로 좋은 일만 가득 할 거에요.<br />
+            항상 응원할께요:) <br />
+        </div>
+    </div>
+
+</body>
+
+</html>
